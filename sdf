@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'affaire du Creative - Documentaire</title>
+<style>
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    background: #090909;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+header {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+    background:
+    linear-gradient(90deg, #000 10%, #0009),
+    url('https://images.unsplash.com/photo-1607513746994-51f730a44832?w=1600');
+    background-size: cover;
+    background-position: center;
+}
+.tag { color: #e50914; font-weight: bold; letter-spacing: 4px; }
+h1 { font-size: clamp(45px, 8vw, 90px); margin: 15px 0; }
+.subtitle { color: #ccc; font-size: 20px; max-width: 600px; }
+button {
+    background: #e50914;
+    color: white;
+    border: 0;
+    padding: 15px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+section { padding: 70px 10%; }
+h2 { font-size: 35px; }
+p { color: #bbb; line-height: 1.8; font-size: 18px; }
+.card {
+    background: #171717;
+    padding: 25px;
+    margin: 20px 0;
+    border-left: 4px solid #e50914;
+    border-radius: 5px;
+}
+.stat {
+    font-size: 55px;
+    color: #e50914;
+    font-weight: bold;
+}
+#secret { display: none; }
+footer {
+    background: #000;
+    padding: 50px;
+    text-align: center;
+    color: #777;
+}
+.highlight { color: #e50914; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="tag">DOCUMENTAIRE EXCLUSIF</div>
+    <h1>L'AFFAIRE<br>DU CREATIVE</h1>
+    <p class="subtitle">
+        Une enquête approfondie sur les raisons pour lesquelles
+        Leto devrait arrêter de donner le mode Creative
+        à une personne manifestement incapable de se contrôler.
+    </p>
+    <button onclick="document.getElementById('debut').scrollIntoView({behavior:'smooth'})">
+        DÉCOUVRIR L'ENQUÊTE
+    </button>
+</header>
+
+<section id="debut">
+    <div class="tag">CHAPITRE 01</div>
+    <h2>Un pouvoir trop dangereux</h2>
+    <p>
+        Tout commence avec une simple décision de Leto :
+        donner le mode Creative à un joueur Minecraft.
+    </p>
+    <p>
+        À première vue, rien de grave. Après tout, le Creative
+        permet de construire, d'explorer et de créer.
+    </p>
+    <p>
+        Mais personne n'avait prévu les conséquences.
+        En quelques minutes, le monde Minecraft devient
+        une zone de chaos incontrôlable.
+    </p>
+
+    <div class="card">
+        <h2>Le problème</h2>
+        <p>
+            Le joueur n'utilise pas le Creative pour construire
+            des monuments historiques. Il l'utilise pour faire
+            absolument n'importe quoi.
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="tag">CHAPITRE 02</div>
+    <h2>Les statistiques du désastre</h2>
+    <p>Une étude extrêmement sérieuse (réalisée par personne).</p>
+
+    <div class="card">
+        <div class="stat">99%</div>
+        <p>De chances que quelque chose finisse détruit.</p>
+    </div>
+
+    <div class="card">
+        <div class="stat">0</div>
+        <p>Monuments historiques construits sérieusement.</p>
+    </div>
+
+    <div class="card">
+        <div class="stat">100%</div>
+        <p>De chances que Leto regrette sa décision.</p>
+    </div>
+</section>
+
+<section>
+    <div class="tag">CHAPITRE 03</div>
+    <h2>Les preuves accablantes</h2>
+    <p>
+        Les témoignages sont formels : le Creative entre
+        entre de mauvaises mains peut devenir une catastrophe.
+    </p>
+
+    <div class="card">
+        <h3>Pièce à conviction n°1</h3>
+        <p>Les constructions qui n'auraient jamais dû exister.</p>
+    </div>
+
+    <div class="card">
+        <h3>Pièce à conviction n°2</h3>
+        <p>Les modifications du monde sans aucune autorisation.</p>
+    </div>
+
+    <div class="card">
+        <h3>Pièce à conviction n°3</h3>
+        <p>La phrase : "T'inquiète, je vais juste faire un truc."</p>
+    </div>
+</section>
+
+<section>
+    <div class="tag">CHAPITRE 04</div>
+    <h2>Le verdict</h2>
+    <p>
+        Après analyse des faits, des dégâts et des comportements,
+        notre commission indépendante arrive à une conclusion.
+    </p>
+
+    <div class="card">
+        <h2>LETO DOIT AGIR.</h2>
+        <p>
+            Nous demandons officiellement le retrait du mode
+            Creative afin de préserver les mondes Minecraft
+            et la santé mentale des autres joueurs.
+        </p>
+        <p class="highlight">
+            Le monde Minecraft mérite une seconde chance.
+        </p>
+    </div>
+
+    <button onclick="document.getElementById('secret').style.display='block'">
+        DÉCOUVRIR LE DERNIER DOSSIER
+    </button>
+
+    <div id="secret" class="card">
+        <h1>INFORMATION CONFIDENTIELLE</h1>
+        <p>
+            Après plusieurs heures d'investigation,
+            notre équipe a découvert une dernière information
+            capitale concernant Leto.
+        </p>
+        <h2 class="highlight">
+            LETO A UN GROS FRONT.
+        </h2>
+        <p>Fin du documentaire.</p>
+    </div>
+</section>
+
+<footer>
+    DOCUMENTAIRE NON OFFICIEL · 2026<br>
+    Toute ressemblance avec des dégâts Minecraft
+    est probablement volontaire.
+</footer>
+
+</body>
+</html>
